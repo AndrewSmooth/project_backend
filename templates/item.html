@@ -1,0 +1,16 @@
+<html>
+<head>
+    <title>Item Details</title>
+</head>
+<body>
+    {% if product %}
+    <h1>{{ product.name }}</h1>
+    <p>id: {{ product.id }}</p>
+    <p>size: {{ product.size }}</p>
+    <p>color: {{ product.color }}</p>
+    <p>price: {{ product.price }}</p>
+    {% else %}
+    <h1>Product doesn't exists</h1>
+    {% endif %}
+</body>
+</html>
